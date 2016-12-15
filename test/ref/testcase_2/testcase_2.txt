@@ -1,0 +1,9 @@
+************************
+*** device2doc (v1) ***
+************************
+device file     : ../test/in/test_1/device.json
+lbnldevice file : None
+docx            : ../input/ResourceTemplate.docx
+word_out        : ../test/./out/testcase_2/testcase_2.docx
+
+document saved.. ../test/./out/testcase_2/testcase_2.docx

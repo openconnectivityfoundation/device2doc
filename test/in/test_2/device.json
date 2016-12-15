@@ -1,0 +1,106 @@
+[
+    { "category" : "Space Conditioning (11)",
+        "devices" :[
+            {
+                "name" : "Unitary System",
+                "rt"  : "oic.d.unitarysystem",
+                "comment" : "window and wall units without external components; self contained",
+                "exising" : [
+                      {
+                        "devicename": "Air Conditioner",
+                        "devicetype": "oic.d.airconditioner",
+                        "resources": [
+                          {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+                          {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+                        ]
+                      },
+                      {
+                        "devicename": "Air Purifier",
+                        "devicetype": "oic.d.airpurifier",
+                        "resources": [
+                          {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+                        ]
+                      }
+                ]
+            },
+            {
+                "name" : "Boiler",
+                "rt"  : "oic.d.boiler",
+                "comment" : "device that heats water (or other liquid)",
+                "exising" : [
+   
+                ]
+            },
+            {
+                "name" : "Furnace",
+                "rt"  : "oic.d.furnace",
+                "comment" : "device that heats air (or other gas)",
+                "exising" : [
+   
+                ]
+            },
+            {
+                "name" : "Pump",
+                "rt"  : "oic.d.pump",
+                "comment" : "device that moves water (or other liquid)",
+                "exising" : [
+   
+                ]
+            }
+            
+        ]   
+    },
+    { "category" : "Lighing (5)",
+        "comment" : "large devices; small in misc",
+        "devices" :[ 
+          {
+                "name" : "Lighting - outdoor",
+                "rt"  : "oic.d.light",
+                "comment" : "",
+                "exising" : [
+                    {
+                     "devicename": "Light",
+                     "devicetype": "oic.d.light",
+                     "resources": [
+                       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+                     ]
+                   }
+                ]
+            },
+            {
+                "name" : "Lighting - fixed",
+                "rt"  : "oic.d.light",
+                "comment" : "hard wired",
+                "exising" : [
+                    {
+                     "devicename": "Light",
+                     "devicetype": "oic.d.light",
+                     "resources": [
+                       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+                     ]
+                   }
+                ]
+            },
+            {
+                "name" : "Lighting - portable",
+                "rt"  : "oic.d.light",
+                "comment" : "has normal plug",
+                "exising" : [
+                    {
+                     "devicename": "Light",
+                     "devicetype": "oic.d.light",
+                     "resources": [
+                       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+                     ]
+                   }
+                ]
+            }
+        ]
+    },
+    { "category" : "Appliance (10)",
+        "comment" : "large devices; small in misc",
+        "devices" :[ 
+        
+        ]
+    }
+]

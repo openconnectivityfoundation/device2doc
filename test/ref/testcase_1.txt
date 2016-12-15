@@ -1,0 +1,17 @@
+************************
+*** device2doc (v1) ***
+************************
+usage: device2doc.py [-h] [-ver] [-device [DEVICE]] [-lbnldevice [LBNLDEVICE]]
+                     [-docx [DOCX]] [-word_out [WORD_OUT]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -ver, --verbose       Execute in verbose mode
+  -device [DEVICE], --device [DEVICE]
+                        device file name (json)
+  -lbnldevice [LBNLDEVICE], --lbnldevice [LBNLDEVICE]
+                        lbln device file name (json)
+  -docx [DOCX], --docx [DOCX]
+                        word file in
+  -word_out [WORD_OUT], --word_out [WORD_OUT]
+                        word file out

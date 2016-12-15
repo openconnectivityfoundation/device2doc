@@ -1,0 +1,12 @@
+************************
+*** device2doc (v1) ***
+************************
+device file     : None
+lbnldevice file : ../test/in/test_2/device.json
+docx            : ../input/ResourceTemplate.docx
+word_out        : ../test/./out/testcase_3/testcase_3.docx
+
+category: Space Conditioning (11)
+category: Lighing (5)
+category: Appliance (10)
+document saved.. ../test/./out/testcase_3/testcase_3.docx
