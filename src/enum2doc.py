@@ -153,14 +153,16 @@ class CreateWordDoc(object):
         else:
             Table (paragraph)
 
-        paragraph.add_run(' – the defined set of of standardized enumerations')
+        paragraph.add_run(' – the defined set of standardized enumerations')
         paragraph.style = 'TABLE-title'
 
         self.tableAttribute = self.document.add_table(rows=1, cols=2, style='TABLE-A')
         self.tableAttribute.autofit = True
         hdr_cells = self.tableAttribute.rows[0].cells
         hdr_cells[0].text = 'Enumeration'
+        hdr_cells[0].paragraphs[0].style = 'TABLE-col-heading'
         hdr_cells[1].text = 'Description'
+        hdr_cells[1].paragraphs[0].style = 'TABLE-col-heading'
 
         enumerationlist = parse_tree["supportedenumerations"]
 
@@ -169,7 +171,9 @@ class CreateWordDoc(object):
             for enumname,enumdesc in enumerationobject.items():
                 row_cells = self.tableAttribute.add_row().cells
                 row_cells[0].text = enumname
+                row_cells[0].paragraphs[0].style = 'TABLE-cell'
                 row_cells[1].text = enumdesc
+                row_cells[1].paragraphs[0].style = 'TABLE-cell'
 
         # Set the width of the first column
         for cell in self.tableAttribute.columns[0].cells:
