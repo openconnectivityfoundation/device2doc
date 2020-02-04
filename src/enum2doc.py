@@ -153,7 +153,7 @@ class CreateWordDoc(object):
         else:
             Table (paragraph)
 
-        paragraph.add_run(' – the defined set of standardized enumerations')
+        paragraph.add_run(' – The defined set of standardized enumerations')
         paragraph.style = 'TABLE-title'
 
         self.tableAttribute = self.document.add_table(rows=1, cols=2, style='TABLE-A')
